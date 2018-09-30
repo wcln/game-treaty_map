@@ -2,7 +2,7 @@
  * BCLearningNetwork.com
  * [Game Name]   
  * @author Parsa Rajabi - ParsaRajabiPR@gmail.com
- * Date [Month/Year]
+ * September 2018
  */
 
 //// VARIABLES ////
@@ -84,7 +84,7 @@ function initMuteUnMuteButtons() {
     muteButton.on("click", toggleMute);
     unmuteButton.on("click", toggleMute);
 
-    stage.addChild(unmuteButton);
+//    stage.addChild(unmuteButton);
 }
 
 /*
@@ -100,12 +100,17 @@ function initListeners() {
 
 // bitmap variables
 var muteButton, unmuteButton;
+var background;
 /*
  * Add files to be loaded here.
  */
 function setupManifest() {
     manifest = [
-       {
+       
+        {
+            src: "images/background.png",
+            id: "background"
+    },{
             src: "images/mute.png",
             id: "mute"
     },
@@ -137,6 +142,8 @@ function handleFileLoad(event) {
         muteButton = new createjs.Bitmap(event.result);
     } else if (event.item.id == "unmute") {
         unmuteButton = new createjs.Bitmap(event.result);
+    } else if (event.item.id == "background") {
+        background = new createjs.Bitmap(event.result);
     } 
 }
 
