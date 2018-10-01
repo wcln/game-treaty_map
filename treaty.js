@@ -124,7 +124,7 @@ function init() {
 function initGraphics() {
 
   // Panel positioning
-  panel.x = 540;
+  panel.x = 530;
   panel.y = 100;
 
   // Treaty title text
