@@ -6,6 +6,7 @@
  */
 
 var STAGE_WIDTH, STAGE_HEIGHT;
+var isChrome = !!window.chrome && !!window.chrome.webstore;
 
 /*
  * Edit treaty information here. "title", "info", and "date" fields will be displayed to the user when a treaty is clicked.
@@ -128,7 +129,7 @@ function initGraphics() {
 
   // Treaty title text
   treatyTitleText = new createjs.Text("", "22px Comic Sans MS", "black");
-  treatyTitleText.y = panel.y + 7;
+  treatyTitleText.y = panel.y + ((isChrome)? 0:7);
   treatyTitleText.lineWidth = panel.image.width - 25;
   treatyTitleText.textAlign = 'center';
 
