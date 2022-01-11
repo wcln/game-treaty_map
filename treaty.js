@@ -1,7 +1,7 @@
 /**
- * BCLearningNetwork.com
+ * wcln.ca
  * Treaty Map
- * Parsa Rajabi & Colin Bernard
+ * Parsa Rajabi & Colin Perepelken
  * September 2018
  */
 
